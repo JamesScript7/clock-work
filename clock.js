@@ -40,22 +40,3 @@ function timer() {
 	currentDate.innerHTML = date
 	setTimeout(timer, 101);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
