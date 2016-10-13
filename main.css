@@ -15,8 +15,8 @@ body {
 }
 
 #clock {
-	font-family: lobster, helvetica, sans-serif;
-	font-size: 5em;
+	font-family: monospace;
+	font-size: 4em;
 	width: 700px;
 	margin: 0 auto;
 	margin-top: 40px;
