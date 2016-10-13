@@ -7,6 +7,7 @@ function timer() {
 	var minutes = document.getElementById("minutes");
 	var seconds = document.getElementById("seconds");
 	var milliseconds = document.getElementById("milliseconds");
+	var currentDate = document.getElementById("current-date");
 	
 	var time = {
 		"hours": date.getHours(),
@@ -15,13 +16,24 @@ function timer() {
 		"milliseconds": date.getMilliseconds()
 	};
 
-	hours.innerHTML = time.hours
-	minutes.innerHTML = time.minutes
-	seconds.innerHTML = time.seconds
-	milliseconds.innerHTML = time.milliseconds
+	currentDate.innerHTML = date
 
-	setTimeout(timer, 1000);
+	hours.innerHTML = time.hours < 10 ? "0" + time.hours : time.hours
+	minutes.innerHTML = time.minutes < 10 ? "0" + time.minutes : time.minutes
+	seconds.innerHTML = time.seconds < 10 ? "0" + time.seconds : time.seconds
+
+	if (time.milliseconds < 10) {
+		milliseconds.innerHTML = "00" + time.milliseconds
+	} else if (time.milliseconds < 100) {
+		milliseconds.innerHTML = "0" + time.milliseconds
+	} else {
+		milliseconds.innerHTML = time.milliseconds
+	}
+	
+	
+	setTimeout(timer, 102);
 }
+
 
 
 

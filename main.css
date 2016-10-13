@@ -1,18 +1,33 @@
 body {
-	background-color: orange;
+	background-color: black;
+}
+
+span {
+	/*border: solid black 1px;*/
+	float: left;
+	padding: 3px;
+}
+
+.full-date {
+	display: inline;
+	color: greenyellow;
 }
 
 #clock {
+	font-family: helvetica, sans-serif;
 	text-align: center;
-	font-family: sans-serif;
 	font-size: 6em;
-	color: snow;
+	width: 650px;
+	margin: auto;
+	color: greenyellow;
 }
 
 .nav {
-	width: 200px;
-	margin: 0 auto;
+	clear: both;
 	overflow: auto;
+	width: 200px;
+	margin: auto;
+	padding: 20px;
 }
 
 .previous {
