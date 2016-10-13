@@ -8,3 +8,17 @@ body {
 	font-size: 6em;
 	color: snow;
 }
+
+.nav {
+	width: 200px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.previous {
+	float: left;
+}
+
+.next {
+	float: right;
+}
