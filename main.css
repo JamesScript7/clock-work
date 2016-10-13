@@ -3,35 +3,21 @@ body {
 }
 
 span {
-	/*border: solid black 1px;*/
+	border: solid snow 1px;
+	overflow: auto;
 }
 
 .full-date {
 	display: inline;
 	color: greenyellow;
+	text-align: center;
 }
 
 #clock {
-	font-family: helvetica, sans-serif;
-	text-align: center;
+	font-family: lobster, helvetica, sans-serif;
 	font-size: 5em;
-	width: 800px;
+	width: 700px;
 	margin: 0 auto;
+	padding-top: 20px;
 	color: greenyellow;
-}
-
-.nav {
-	clear: both;
-	overflow: auto;
-	width: 200px;
-	margin: auto;
-	padding: 20px;
-}
-
-.previous {
-	float: left;
-}
-
-.next {
-	float: right;
 }

@@ -18,12 +18,9 @@ function timer() {
 		"amPm": "AM"
 	};
 
-	currentDate.innerHTML = date
-	
 	if (time.hours > 12) {
 		time.hours -= 12
 		time.amPm = "PM"
-		amPm.innerHTML = time.amPm
 	}
 
 	hours.innerHTML = time.hours < 10 ? "0" + time.hours : time.hours
@@ -37,9 +34,11 @@ function timer() {
 	} else {
 		milliseconds.innerHTML = time.milliseconds
 	}
+
+	amPm.innerHTML = time.amPm
 	
-	
-	setTimeout(timer, 102);
+	currentDate.innerHTML = date
+	setTimeout(timer, 101);
 }
 
 
