@@ -1,5 +1,3 @@
-timer();
-
 function timer() {
 	var date = new Date();
 
@@ -40,3 +38,5 @@ function timer() {
 	currentDate.innerHTML = date
 	setTimeout(timer, 101);
 }
+
+timer();
